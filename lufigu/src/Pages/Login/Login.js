@@ -26,7 +26,7 @@ const Login = () => {
     } else {
       setInputs(false);
       try {
-        const response = await axios.post('https://lufigu-backend.onrender.com/login', { email, password });
+        const response = await axios.post('https://lufigu.onrender.com//login', { email, password });
         const { token } = response.data;
         localStorage.setItem('token', token);
         login(token);
@@ -48,7 +48,7 @@ const Login = () => {
       const { email } = decoded;
 
 
-      const result = await axios.post('https://lufigu-backend.onrender.com/login-google', { email });
+      const result = await axios.post('https://lufigu.onrender.com//login-google', { email });
 
 
       const { token } = result.data;
