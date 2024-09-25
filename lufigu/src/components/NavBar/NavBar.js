@@ -95,7 +95,7 @@ export const NavBar = ({ onSearchChange }) => {
             </div>
           </Link>
 
-          {perfil && windowWidth === 360  &&  (
+          {perfil && windowWidth === 420  &&  (
             <div onClick={handlePerfil} className='exit-button'>
               <UserIcon id='userN' style={{ fontSize: '150px' }} />
               <button id='sairM' onClick={logout}>Sair da conta</button>
