@@ -1,0 +1,62 @@
+.boxPds {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    overflow: auto;
+}
+
+
+* {
+    text-decoration: none;
+}
+
+.boxPd1 {
+    width: 17vw;
+    height: 38vh;
+    background-color: silver;
+    padding: 30px;
+    margin: 10px;
+    margin-left: 20px;
+    padding-top: 25px;
+    border-radius: 10px;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.boxPd1:hover {
+    transform: scale(1.03); 
+}
+
+.img {
+    width: 15vw;
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.preco {
+    font-size: 20px;
+    color: black;
+}
+
+
+
+@media (max-width:420px) {
+    .boxPds{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin-bottom: 50px;
+    }
+    .boxPd1 {
+        width: 70%;
+        height: 33vh;
+        padding: 10px;
+        padding-top: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .img{
+        width: 70%;
+        height: 25vh;
+    }
+}

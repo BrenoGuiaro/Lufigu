@@ -1,0 +1,137 @@
+.booCadastro {
+    width: 40vw;
+    background-color: #c53028;
+    margin: 0 auto;
+    height: 80vh;
+    margin-top: 7vh;
+    position: relative;
+    border-radius: 10px;
+}
+
+.booImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0px;
+
+}
+
+.boxII {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 7vw;
+    margin-top: 5vh;
+}
+
+.input8 {
+    width: 15vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    height: 3.5vh;
+    padding-left: 15px;
+}
+
+#btn12 {
+    appearance: button;
+    background-color: #171616;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+
+#btn12:after {
+    background-clip: padding-box;
+    background-color: #3b3736;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#btn12:main,
+#btn12:focus {
+    user-select: auto;
+}
+
+#btn12:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+#btn12:disabled {
+    cursor: auto;
+}
+
+#btn12:active:after {
+    border-width: 0 0 0px;
+}
+
+#btn12:active {
+    padding-bottom: 10px;
+}
+
+
+#olho {
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.centerww {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+
+@media (max-width:420px){
+    .booCadastro{
+        width: 90%;
+        min-height: 80vh; 
+        height: auto;
+        margin-top: 6vh;
+    }
+
+    .input8{
+        width: 60%;
+        min-height: 3.5vh;
+        height: auto;
+    }
+    .boxII{
+        margin-left: vw;
+    }
+}

@@ -1,0 +1,19 @@
+.input {
+    background-color: white;
+    width: 33vw;
+    height: 3vh;
+    border-radius: 8px;
+    border: none;
+
+    padding: 6px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+
+@media (max-width:420px) {
+    .input {
+        width: 90%;
+
+    }
+}

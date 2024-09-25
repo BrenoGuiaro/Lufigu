@@ -1,0 +1,46 @@
+.navC {
+    background-color: #c53028;
+    width: 10vw;
+    height: 10vh;
+
+    display: flex;
+    border-radius: 0px 0px 0px 10px;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cart-coitaner {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -17%;
+    left: -29%;
+    background-color: rgb(9, 7, 7);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    min-width: 15px;
+    height: 15px;
+}
+
+
+@media (max-width:420px) {
+    .navC{
+        border-radius: 0px;
+    }
+
+    .cart-count{
+        top: 1%;
+        left: 0%;
+    }
+}

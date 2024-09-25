@@ -1,0 +1,27 @@
+.divGoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.booLogin{
+    width: 40vw;
+    background-color: #c53028;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    height: 73vh;
+    margin-top: 15vh
+}
+
+
+
+@media (max-width:420px){
+
+    .booLogin{
+        width:90%;
+       margin-top: 10vh
+    }
+
+}

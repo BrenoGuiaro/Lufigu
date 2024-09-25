@@ -1,0 +1,185 @@
+.box {
+    display: flex;
+    background-color: #c53028;
+    width: 99.2%;
+    max-width: 99.2%;
+    overflow-y: hidden;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo {
+    width: 8vw;
+    height: 13vh;
+}
+
+
+.cart-container {
+    position: relative;
+}
+
+.cart-count2 {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    background-color: rgb(9, 7, 7);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    min-width: 15px;
+    height: 15px;
+}
+
+.pao2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27vw;
+    max-width: 30vw;
+    margin-right: 70px;
+}
+
+.profile-container {
+    width: 20vw;
+    max-width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+.boxSobre2 {
+    background-color: #c53028;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 94%;
+    border-radius: 80px;
+}
+
+
+#msg {
+    color: white;
+    font-size: 15px
+}
+
+#userN {
+    font-size: 30px;
+    margin-right: 10px;
+    color: white
+}
+
+#exit {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+.boxMobile {
+    width: 100%;
+    height: 7vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #c53028;
+
+}
+
+#iconCart {
+    font-size: 30px;
+    color: white
+}
+
+.exit-button {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sairM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 6vh;
+    font-size: 22px;
+    background-color: #c53028;
+    border-radius: 8px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+
+.input1 {
+    display: flex;
+}
+
+@media (max-width:420px) {
+
+    .exit-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .box {
+        height: 12vh;
+    }
+
+    .logo {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    #msg {
+        display: none;
+    }
+
+    #exit {
+        display: none;
+    }
+
+    .pao2 {
+        width: 30vw;
+
+        margin-right: 30px;
+    }
+
+    .boxMobile {
+        display: flex;
+    }
+
+    .input1 {
+        display: none;
+    }
+    .profile-container{
+        width: 15vw;
+    }
+    .boxSobre2{
+        position: fixed;
+        top: 73%;
+        left: 80%;
+    }
+}

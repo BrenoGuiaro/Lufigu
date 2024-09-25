@@ -1,0 +1,342 @@
+.divQR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+}
+
+.divTUDO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.form {
+    background-color: #dadada;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-left: 60px;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 30px;
+
+}
+
+.divinse {
+    margin: 10px;
+}
+
+.inputINSE {
+    width: 20vw;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.inputINSE2 {
+    width: 10vw;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.btnCONFIRMAR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#btnDe {
+    background-color: #c35;
+}
+
+
+
+
+/* From Uiverse.io by css#btns-io */
+#btn {
+    appearance: button;
+    background-color: #7a2c28;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#btn:after {
+    background-clip: padding-box;
+    background-color: #c53028;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#btn:main,
+#btn:focus {
+    user-select: auto;
+}
+
+#btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+#btn:disabled {
+    cursor: auto;
+}
+
+#btn:active:after {
+    border-width: 0 0 0px;
+}
+
+#btn:active {
+    padding-bottom: 10px;
+}
+
+.boxTitulo4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3%;
+    left: 0;
+    background-color: #c53028;
+    height: 12vh;
+    width: 32vw;
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+}
+
+#imgQR {
+    width: 300px;
+    height: 300px
+}
+
+.boxCopia{
+    display: flex;
+    background-color: #d9d9d9;
+    width: 300px;
+    height: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 2px solid black;
+    border-radius: 8px;
+    position: relative;
+}
+
+#btnCOPIA{
+    background-color: blue;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 100%;
+
+}
+
+#copiar{
+    width: 90%;
+}
+
+#btnCopiar{
+    background-color: #c53028;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+}
+
+#btnCopiar:hover{
+    background-color: #7a2c28;
+}
+
+
+.boxCERTO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.boxBCer{
+    background-color: white;
+    width: 40%;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#right{
+    font-size: 80px;
+    color: green;
+}
+
+#btnC {
+    appearance: button;
+    background-color: rgb(0, 21, 0);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#btnC:after {
+    background-clip: padding-box;
+    background-color: green;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#btnC:main,
+#btnC:focus {
+    user-select: auto;
+}
+
+#btnC:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+#btnC:disabled {
+    cursor: auto;
+}
+
+#btnC:active:after {
+    border-width: 0 0 0px;
+}
+
+#btnC:active {
+    padding-bottom: 10px;
+}
+
+
+
+@media (max-width:420px) {
+    .boxTitulo4 {
+        width: 100%;
+        top: 0;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .form {
+        position: relative;
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .divinse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .inputINSE {
+        width: 45%;
+
+    }
+
+    .inputINSE2 {
+        width: 40%;
+    }
+
+    #email {
+        width: 62%;
+    }
+
+    #imgQR{
+        width: 230px;
+        height: 230px;
+    }
+    .boxBCer{
+        width:90%
+        
+    }
+
+
+
+
+}
