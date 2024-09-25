@@ -66,7 +66,7 @@ export const PagamentoPix = ({ produtosUnico, setProdutosUnico }) => {
         const quantidadeComprada = cartItem.quantity;
 
         try {
-          await axios.put(`http://localhost:5000/produto/${produtoId}/atualizar-estoque`, {
+          await axios.put(`https://lufigu-backend.onrender.com/produto/${produtoId}/atualizar-estoque`, {
             saborId,
             quantidadeComprada
           });
@@ -109,7 +109,7 @@ export const PagamentoPix = ({ produtosUnico, setProdutosUnico }) => {
 
 
     try {
-      const response = await axios.post('http://localhost:5000/criar-pix', dataToSend);
+      const response = await axios.post('https://lufigu-backend.onrender.com/criar-pix', dataToSend);
 
 
       const copiaCola = response.data.result.point_of_interaction.transaction_data.qr_code
