@@ -15,7 +15,7 @@ export const NavBar = ({ onSearchChange }) => {
   const { user, logout } = useContext(AuthContext);
 
   const [perfil, setPerfil] = useState(false)
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth); 
+  const [mobile, setMobile] = useState(false);
 
   const handlePerfil = () => {
     setPerfil(!perfil);
@@ -23,14 +23,24 @@ export const NavBar = ({ onSearchChange }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      if (window.innerWidth <= 420) {
+        setMobile(true);
+
+
+      } else {
+        setMobile(false);
+
+      }
     };
 
+    handleResize();
+
     window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [])
 
 
 
@@ -95,7 +105,7 @@ export const NavBar = ({ onSearchChange }) => {
             </div>
           </Link>
 
-          {perfil && windowWidth === 420  &&  (
+          {perfil && mobile && (
             <div onClick={handlePerfil} className='exit-button'>
               <UserIcon id='userN' style={{ fontSize: '150px' }} />
               <button id='sairM' onClick={logout}>Sair da conta</button>
