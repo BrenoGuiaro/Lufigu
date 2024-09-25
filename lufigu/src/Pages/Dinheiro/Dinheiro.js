@@ -34,7 +34,7 @@ export const Dinheiro = ({ produtosUnico, setProdutosUnico }) => {
                 if (sabor && sabor.estoque >= cartItem.quantity) {
 
                     try {
-                        await axios.put(`http://localhost:5000/produto/${produtoId}/atualizar-estoque`, {
+                        await axios.put(`https://lufigu-backend.onrender.com/produto/${produtoId}/atualizar-estoque`, {
                             saborId,
                             quantidadeComprada: cartItem.quantity
                         });
