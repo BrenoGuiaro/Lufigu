@@ -109,7 +109,7 @@ export const PagamentoPix = ({ produtosUnico, setProdutosUnico }) => {
 
 
     try {
-      const response = await axios.post('https://lufigu-backend.onrender.com/criar-pix', dataToSend);
+      const response = await axios.post('https://lufigu.onrender.com/criar-pix', dataToSend);
 
 
       const copiaCola = response.data.result.point_of_interaction.transaction_data.qr_code
