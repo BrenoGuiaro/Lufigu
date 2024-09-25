@@ -40,7 +40,7 @@ export const UnicoProduto = () => {
 
     const fetchProduto = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/produto/${id}`);
+            const response = await axios.get(`https://lufigu-backend.onrender.com/produto/${id}`);
             const produtoData = response.data.produto;
             setProduto(produtoData);
             if (produtoData.variacoes && produtoData.variacoes.length > 0) {
