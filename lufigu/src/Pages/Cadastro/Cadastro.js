@@ -24,9 +24,9 @@ const Cadastro = ({ name, email, password, confirmPassword, setName, setEmail, s
     } else {
       setInputs(false);
       try {
-        await axios.post('http://localhost:5000/cadastro', { name, email, password, confirmPassword });
+        await axios.post('https://lufigu-backend.onrender.com/cadastro', { name, email, password, confirmPassword });
 
-        const result = await axios.post('http://localhost:5000/login-google', { email })
+        const result = await axios.post('https://lufigu-backend.onrender.com/login-google', { email })
         const { token } = result.data
         localStorage.setItem('token', token);
         login(token)
@@ -49,9 +49,9 @@ const Cadastro = ({ name, email, password, confirmPassword, setName, setEmail, s
       const decoded = jwtDecode(response.credential);
       const { name, email } = decoded;
 
-      await axios.post('http://localhost:5000/cadastro', { name, email, isGoogleUser: true });
+      await axios.post('https://lufigu-backend.onrender.com/cadastro', { name, email, isGoogleUser: true });
 
-      const result = await axios.post('http://localhost:5000/login-google', { email })
+      const result = await axios.post('https://lufigu-backend.onrender.com/login-google', { email })
       const { token } = result.data
       localStorage.setItem('token', token);
       login(token)
