@@ -26,7 +26,7 @@ function App() {
 
   const getProdutos = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/produtos');
+      const response = await axios.get('https://lufigu-backend.onrender.com/produtos');
       const produtos = response.data.produtos.reduce((acc, produto) => {
         acc[produto._id] = produto;
         return acc;
@@ -50,7 +50,7 @@ function App() {
       // Determine se o usuário está se autenticando com o Google
       const isGoogleUser = false; // Defina como true se o usuário se autenticou com o Google
   
-      const response = await axios.post('http://localhost:5000/cadastro', {
+      const response = await axios.post('https://lufigu-backend.onrender.com/cadastro', {
         name: name,
         email: email,
         password: isGoogleUser ? undefined : password, // Envie undefined para Google users
@@ -82,7 +82,7 @@ function App() {
     try {
       const token = localStorage.getItem('token');
       const produto = await axios.post(
-        'http://localhost:5000/produto',
+        'https://lufigu-backend.onrender.com/produto',
         {
 
           variacoes: [
@@ -115,7 +115,7 @@ function App() {
 
   const updateProduto = async (id, variacaoId, preco, estoque) => {
     try {
-      const response = await axios.put(`http://localhost:5000/update/${id}`, {
+      const response = await axios.put(`https://lufigu-backend.onrender.com/update/${id}`, {
         preco: preco,
         variacaoId: variacaoId,
         estoque: estoque,
@@ -142,7 +142,7 @@ function App() {
   const addSabor = async (id) => {
   
     try {
-      const response = await axios.put(`http://localhost:5000/adicionar/${id}`, {
+      const response = await axios.put(`https://lufigu-backend.onrender.com/adicionar/${id}`, {
         preco: precoS,
         sabor: saborS,
         nome: nomeS,
@@ -163,7 +163,7 @@ function App() {
   const remove = async (produtoId, variacaoId) => {
     console.log(produtoId, variacaoId)
     try {
-      const response = await axios.delete(`http://localhost:5000/produto/${produtoId}/variacao/${variacaoId}`);
+      const response = await axios.delete(`https://lufigu-backend.onrender.com/produto/${produtoId}/variacao/${variacaoId}`);
       console.log(response.data.msg);
 
       await getProdutos();
