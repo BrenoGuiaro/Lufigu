@@ -1,7 +1,6 @@
 {
   "name": "lufigu",
   "version": "0.1.0",
-  "homepage": "https://BrenoGuiaro.github.io/lufigu",
   "private": true,
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
