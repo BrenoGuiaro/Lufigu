@@ -59,7 +59,7 @@ function App() {
       });
   
       console.log(response.data);
-      window.location = 'http://localhost:3000/';
+      window.location = 'https://lufigu.vercel.app/';
     } catch (error) {
       console.log(error);
     }
@@ -104,7 +104,7 @@ function App() {
       );
       console.log(produto);
       await getProdutos()
-      window.location = 'http://localhost:3000/admin'
+      window.location = 'https://lufigu.vercel.app//admin'
     } catch (error) {
       console.log('Deu merda', error);
     }
@@ -124,7 +124,7 @@ function App() {
       console.log(response)
 
       await getProdutos()
-      window.location = 'http://localhost:3000/admin'
+      window.location = 'https://lufigu.vercel.app//admin'
 
     } catch (error) {
       console.log('Erro ao atualizar produto:', error);
@@ -153,7 +153,7 @@ function App() {
 
       console.log(response)
       await getProdutos()
-      window.location = 'http://localhost:3000/admin'
+      window.location = 'https://lufigu.vercel.app//admin'
 
     } catch (error) {
       console.log('Erro na rota add sabor', error.response.data.msg)
