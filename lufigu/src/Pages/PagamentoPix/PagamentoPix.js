@@ -66,7 +66,7 @@ export const PagamentoPix = ({ produtosUnico, setProdutosUnico }) => {
         const quantidadeComprada = cartItem.quantity;
 
         try {
-          await axios.put(`https://lufigu-backend.onrender.com/produto/${produtoId}/atualizar-estoque`, {
+          await axios.put(`https://lufigu.onrender.com/produto/${produtoId}/atualizar-estoque`, {
             saborId,
             quantidadeComprada
           });
