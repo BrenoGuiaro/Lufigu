@@ -137,7 +137,7 @@ export const UnicoProduto = () => {
                         id='imgPPL'
                     />
                     <div className='center6'>
-                        <h2>R$2:{sabor.preco.toFixed(2)}</h2>
+                        <h2>R$:{sabor.preco.toFixed(2)}</h2>
                     </div>
                 </div>
 
