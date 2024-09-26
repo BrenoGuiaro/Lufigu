@@ -130,7 +130,6 @@ export const UnicoProduto = () => {
                             </div>
                         </>}
 
-
                     <img
                         src={sabor ? sabor.img : ''}
                         alt={sabor ? sabor.nome : 'Produto'}
