@@ -22,7 +22,7 @@ export const Sobre = () => {
           <h4>Gustavo o Barbeiro </h4>
           <img src={gustavo} className='imgag' alt='gustavo' />
 
-          <p style={{textAlign: 'start', marginBottom: '50px'}}>Gustavo estuda na escola Sesi desde o primeiro aninho, e atualmente se encontra no último ano da escola, tem 17 anos e sonha em ser barbeiro algum dia, e quando soube da possibilidade de ser um empreendedor ele não pensa duas vezes decidiu cair DE BOCA 😋 🍆 nesse projeto para descolar uma graninha para sua barbearia </p>
+          <p style={{textAlign: 'start', marginBottom: '50px'}}>Gustavo estuda na escola Sesi desde o primeiro aninho, e atualmente se encontra no último ano da escola, tem 17 anos e sonha em ser barbeiro algum dia, e quando soube da possibilidade de ser um empreendedor ele não pensou duas vezes decidiu cair DE BOCA 😋 🍆 nesse projeto para descolar uma graninha para sua barbearia </p>
 
           <h4>Luigi o Bicicleteiro </h4>
           <img src={luigi} className='imgag' alt='luigi'/>
@@ -32,7 +32,9 @@ export const Sobre = () => {
           <h4>Breno o vagabundo</h4>
           <img src={breno} className='imgag' alt='breno'/>
 
-          <p style={{textAlign: 'start', marginBottom: '50px'}}>Breno tem 17 anos e é um VAGABUNDO, diferente do Gustavo e do Luigi, Breno não trabalha com tanta frequência e na maioria do seu tempo está na academia ou aprendendo mais sobre a área que ele tem interesse, no dia em que ele junto com seu amigo Luigi percebeu a oportunidade de ter um “negócio”, viu também a oportunidade de fazer um site para isso, e assim aprimorar seus conhecimentos (isso era o esperado) </p>
+          <p style={{textAlign: 'start', marginBottom: '50px'}}>Breno tem 17 anos e é um VAGABUNDO, diferente do Gustavo e do Luigi, Breno não trabalha com tanta frequência e na maioria do seu tempo está na academia ou aprendendo mais sobre a área que ele tem interesse, no dia em que ele junto com seu amigo Luigi percebeu a oportunidade de ter um “negócio”, viu também a oportunidade de fazer um site para isso, e assim aprimorar seus conhecimentos só que ele só copiou do chatGpt 
+
+</p>
 
   
         </div>
