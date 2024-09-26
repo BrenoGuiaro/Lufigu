@@ -11,7 +11,8 @@
     border: 4px solid black;
 }
 
-.bbbo2 {
+.bbbo4 {
+    background-color: #dadada;
     display: flex;
     flex-direction: column;
 }
@@ -53,6 +54,9 @@
     }
     .imgag{
         width: 100%;
+    }
+    .bbbo4{
+       width: 90%;
     }
 }
 

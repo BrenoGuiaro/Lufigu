@@ -16,7 +16,7 @@ export const Sobre = () => {
       </div>
 
       <div className='bobox'>
-        <div className='bbbo2'>
+        <div className='bbbo4'>
           <p style={{textAlign: 'start', marginBottom: '50px'}}>Nos da empresa Lufigu , decidimos criar esse projeto após ver a necessidade de um docinho após o almoço nos dias de Senai, bom a nossa empresa é composta por 3 membros ultra mentes qualificados para essa vaga, sendo eles Luigi, um dos caras mais alto da escola Sesi 357, Gustavo o barbeiro mais fudido de Mococa e Breno o vagabundo, bom agora vamos ver um pouco mais sobre cada um deles,  </p>
 
           <h4>Gustavo o Barbeiro </h4>
