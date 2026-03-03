@@ -22,10 +22,10 @@ function checkToken(req, res, next) {
     if (!token) {
         return res.status(400).json({ msg: 'Acesso Negado' });
     }
-
+ 
     try {
         const secret = process.env.SECRET;
-        jwt.verify(token, secret);
+        jwt.verify(token, secret); 
         next();
     } catch (error) {
         return res.status(500).json({ msg: 'Token inválido' });

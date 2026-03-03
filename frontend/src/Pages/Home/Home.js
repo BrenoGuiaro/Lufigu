@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Produtos } from '../Produtos/Produtos';
 import { NavBar } from '../../components/NavBar/NavBar';
-import { IconSobre } from '../../components/IconSobre/IconSobre';
 import { FaBoxesStacked as IconAdm } from "react-icons/fa6";
 import '../Home/Home.css'
 import { AuthContext } from '../AuthContext/AuthProvider';
@@ -28,9 +27,7 @@ export const Home = ({ produtosHome }) => {
     <>
       <NavBar onSearchChange={handleSearchChange} />
       <Produtos produtosHome={filteredProducts} />
-      <div className='divSobre'>
-        <IconSobre />
-      </div>
+
 
       {user && user.role === 'admin' && (
         <Link to={'/admin'} className='boxSobre2'><IconAdm style={{ color: 'white', fontSize: '25px' }} /></Link>
